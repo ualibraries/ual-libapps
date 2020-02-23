@@ -1,0 +1,41 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gray-lighter-warm);
+    color: var(--gray-dark);
+    font: 400 100%/1.5 var(--font-sans);
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: var(--link-color);
+
+}
+
+a:link {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-color);
+}
+
+a:hover,
+a:active {
+    color: var(--link-hover-color);
+}
+
+:target {
+    display: block;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+#page {
+    background-color: var(--white);
+}
