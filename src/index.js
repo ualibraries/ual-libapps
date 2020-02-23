@@ -1,4 +1,4 @@
-import "./vars.css";
-import "./normalize.css";
-import "./base.css";
-import "./styles.css";
+import "./css/vars.css";
+import "./css/normalize.css";
+import "./css/base.css";
+import "./css/styles.css";
