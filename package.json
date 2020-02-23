@@ -1,0 +1,32 @@
+{
+  "name": "ual-libapps",
+  "version": "1.0.0",
+  "description": "Customizations for LibApps",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "aws s3 sync dist s3://wsimpson-libguides --delete",
+    "build:dev": "npx webpack -w --verbose",
+    "build:prod": "npx webpack -p",
+    "serve": "node ./static-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpsonw/ual-libapps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simpsonw/ual-libapps/issues"
+  },
+  "homepage": "https://github.com/simpsonw/ual-libapps#readme",
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
