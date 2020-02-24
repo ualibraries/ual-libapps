@@ -1,0 +1,49 @@
+svg {
+    display: block;
+    max-width: 100%;
+    height: 32px;
+}
+
+svg circle,
+svg path {
+    fill: #444444;
+    transition: fill .3s ease;
+}
+
+.social-links__link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-left: -.25em;
+    padding: 0 5px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.social-links__link.icon-facebook-sm-darkGray:hover svg path {
+    fill: #3b5998;
+}
+
+.social-links__link.icon-twitter-sm-darkGray:hover svg path {
+    fill: #55acee;
+}
+
+.social-links__link.icon-youtube-play-sm-darkGray:hover svg path {
+    fill: #b31217;
+}
+
+.social-links__link.icon-vimeo-sm-darkGray:hover svg path {
+    fill: #1AB7EA;
+}
+
+.social-links__link.icon-soundcloud-sm-darkGray:hover svg path {
+    fill: #ff5500;
+}
+
+.social-links__link.icon-instagram-sm-darkGray:hover svg path {
+    fill: #865245;
+}
+
+.social-links__link.icon-instagram-sm-darkGray:hover svg circle {
+    fill: #865245;
+}

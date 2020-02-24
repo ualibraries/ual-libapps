@@ -1,0 +1,29 @@
+.footer__top:after,
+#ua-web-branding-banner-v1:after,
+.header__inner:after,
+.main-nav-menu .menu:after,
+.main-nav:after,
+.main:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+#ua-web-branding-banner-v1 .ua-home,
+#ual_content_alert .close,
+.logo__ua-library,
+.region-alert .user-alert-close a,
+.replace-text {
+    overflow: hidden
+}
+
+#ua-web-branding-banner-v1 .ua-home:before,
+#ual_content_alert .close:before,
+.logo__ua-library:before,
+.region-alert .user-alert-close a:before,
+.replace-text:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%
+}
