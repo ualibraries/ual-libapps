@@ -19,11 +19,11 @@
 }
 
 .svg #ua-web-branding-banner-v1 .ua-home {
-    background-image: url(https://new.library.arizona.edu/sites/all/themes/custom/redux_ual/assets/dist/images/logo/university-of-arizona-logo-white.svg)
+    background-image: url(../../images/logo/university-of-arizona-logo-white.svg)
 }
 
 .no-svg #ua-web-branding-banner-v1 .ua-home {
-    background-image: url(https://new.library.arizona.edu/sites/all/themes/custom/redux_ual/assets/dist/images/logo/university-of-arizona-logo-white.png)
+    background-image: url(../../images/logo/university-of-arizona-logo-white.png)
 }
 
 .header {
@@ -103,11 +103,11 @@
     background-position: 0 -62px;
     background-size: 300px;
     z-index: 2;
-    background-image: url(https://new.library.arizona.edu/sites/all/themes/custom/redux_ual/assets/dist/images/logo/university-libraries-logo-new-w-2x.png)
+    background-image: url(../../images/logo/university-libraries-logo-new-w-2x.png)
 }
 
 .no-backgroundsize .logo__ua-library {
-    background-image: url(https://new.library.arizona.edu/sites/all/themes/custom/redux_ual/assets/dist/images/logo/university-libraries-logo-w.png)
+    background-image: url(../../images/logo/university-libraries-logo-w.png)
 }
 
 @media (min-width:36em) {
