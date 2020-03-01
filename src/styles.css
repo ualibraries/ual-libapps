@@ -1,9 +1,23 @@
-.footer__top:after,
 #ua-web-branding-banner-v1:after,
+.block--thumb-headline__more-link:after,
+.block [class*=content]:after,
+.compound-cta__content:after,
+.compound-cta__header:after,
+.content .block-container:after,
+.footer__top:after,
 .header__inner:after,
 .main-nav-menu .menu:after,
 .main-nav:after,
-.main:after {
+.main:after,
+.region-alert .user-alert:after,
+.region-top-utility-nav:after,
+.region:after,
+.tabs-primary:after,
+.tabs-secondary:after,
+.tabs__content--eql-homepage-widget .tab:after,
+.tabs__content--eql-homepage-widget .thumb--item:after,
+.tabs__vertical:after,
+[class*=view-eq] .views-row:after {
     content: "";
     display: table;
     clear: both
