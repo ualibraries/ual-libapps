@@ -7,7 +7,7 @@
 body {
     background: var(--gray-lighter-warm);
     color: var(--gray-dark);
-    font: 400 100%/1.5 var(--font-sans);
+    font: 400 100%/1.5 MiloWeb-Text, Verdana, Geneva, sans-serif;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -38,4 +38,8 @@ a:active {
 
 #page {
     background-color: var(--white);
+}
+
+html {
+    font-size: 16px;
 }
