@@ -1197,3 +1197,11 @@ fieldset.collapsed {
   text-decoration: none;
   outline: none;
 }
+
+
+/* LibApps specific overrides */
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    outline: none;
+}
