@@ -1205,3 +1205,9 @@ fieldset.collapsed {
 .nav > li > a:focus {
     outline: none;
 }
+
+.input-group .form-control,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+    z-index: 0;
+}
