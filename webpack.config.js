@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const MergeIntoSingleFilePlugin = require('webpack-merge-and-include-globally');
 
 const config = {
   entry: './src/index.js',
@@ -36,6 +37,14 @@ const config = {
   plugins: [
     new MiniCssExtractPlugin(),
     new OptimizeCssAssetsPlugin(),
+    new MergeIntoSingleFilePlugin({
+      files: {
+        "vendor.js": [
+          'node_modules/jquery-once/jquery.once.min.js',
+          path.resolve(__dirname, 'src/js/*.js'),
+        ],
+      }
+    }),
   ],
 };
 
