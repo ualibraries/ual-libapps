@@ -1211,3 +1211,7 @@ fieldset.collapsed {
 .input-group-btn:last-child > .btn-group {
     z-index: 0;
 }
+
+#s-lg-admin-edit-content-link-container a {
+    color: #e2e9eb;
+}
