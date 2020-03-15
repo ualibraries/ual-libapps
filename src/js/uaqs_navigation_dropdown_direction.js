@@ -5,6 +5,9 @@
    */
   Drupal.behaviors.uaZenDropdownOverflowPrevention = {
     attach: function (context, settings) {
+      if($("#main_nav").length == 0){
+        return;
+      }
       var navBar = $('#main_nav'); // find main nav
       var navBarSize = navBar.offset().left + navBar.width(); // save its right-most position on the screen
 

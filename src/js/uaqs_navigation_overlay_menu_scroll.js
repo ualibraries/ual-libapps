@@ -155,6 +155,9 @@
   };
 
   $(window).on('load', function () {
+    if($('.navbar-scroller').length == 0) {
+      return;
+    }
     // Get the scroll width.
     var $uaZenNavbarScroller = $('.navbar-scroller');
     var $uaZenMaxScrollLeft = $uaZenNavbarScroller[0].scrollWidth - $uaZenNavbarScroller[0].clientWidth;
