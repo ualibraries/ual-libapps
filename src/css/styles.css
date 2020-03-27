@@ -1274,25 +1274,3 @@ fieldset.collapsed {
 .input-group-btn:last-child>.btn-group {
   z-index: 0;
 }
-
-#s-lg-admin-edit-content-link-container a {
-  color: #e2e9eb;
-}
-
-.navbar-default .navbar-nav>li.s-lib-app-dropdown>a {
-  font-family: Arial, Helvetica, Verdana;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: normal;
-}
-
-header.s-lib-cmd-bar {
-  position: relative;
-}
-
-.navbar-default #s-lg-admin-command-bar .navbar-nav>li>a {
-  color: rgb(50, 50, 50);
-  letter-spacing: normal;
-  font-size: 12px;
-  font-family: Arial, Helvetica, Veranda
-}
