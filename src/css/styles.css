@@ -1274,3 +1274,7 @@ fieldset.collapsed {
 .input-group-btn:last-child>.btn-group {
   z-index: 0;
 }
+
+html.ua-brand-icons.external-links .navbar-nav [target="_blank"]::after {
+    content: "" ;
+}
