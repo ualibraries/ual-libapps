@@ -1264,8 +1264,7 @@ fieldset.collapsed {
 
 /* LibApps specific overrides */
 
-.nav>li>a:hover,
-.nav>li>a:focus {
+.nav>li>a:hover {
   outline: none;
 }
 
