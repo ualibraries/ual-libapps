@@ -1278,4 +1278,189 @@ fieldset.collapsed {
 html.ua-brand-icons.external-links .navbar-nav [target="_blank"]::after {
   content: "";
 }
+
+/* Hide the grey bar under the list of guides that includes a login link and "powered by..." statement */
+.s-lib-footer {
+  background: none;
+}
+
+/* Fix spacing between menus and guide header */
+#s-lg-guide-header {
+  padding-top: 25px;
+}
+
+/* Adjust spacing from guide to box */
+#s-lg-guide-tabs-title-bar {
+  border-top: none;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* Set tab colors and characteristics */
+#s-lg-tabs-container .nav-tabs>li>a,
+#s-lg-tabs-container .nav-tabs>li>button,
+#s-lg-tabs-container .nav-pills>li>a,
+#s-lg-tabs-container .nav-pills>li>button {
+
+  border: 1px solid transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #E2E9EB;
+  color: #1f3762;
+  font-weight: bold;
+  padding: 4px 15px;
+}
+
+#s-lg-tabs-container .nav-tabs {
+  border-bottom: 0;
+}
+
+#s-lg-tabs-container .nav-tabs>li#s-lg-admin-tab-add>a {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+
+#s-lg-tabs-container .nav-tabs>li>a:hover,
+#s-lg-tabs-container .nav-tabs>li>button:hover,
+#s-lg-tabs-container .nav-pills>li>a:hover,
+#s-lg-tabs-container .nav-pills>li>button:hover {
+
+  border: 1px solid transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #0C234B;
+  color: #ffffff;
+}
+
+#s-lg-tabs-container .nav-tabs>.active>a,
+#s-lg-tabs-container .nav-tabs>.active>button,
+#s-lg-tabs-container .nav-pills>.active>a,
+#s-lg-tabs-container .nav-pills>.active>button {
+  color: #ffffff;
+  cursor: default;
+  background-color: #0C234B;
+
+  border: 1px solid transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-bottom-color: transparent;
+  font-weight: bold;
+}
+
+#s-lg-tabs-container .nav-tabs>.active>.s-lg-subtab-ul>.active>a,
+#s-lg-tabs-container .nav-tabs>.active>.s-lg-subtab-ul>.active>button {
+  color: #ffffff;
+  cursor: default;
+  background-color: #0C234B;
+  border-bottom-color: transparent;
+}
+
+#s-lg-tabs-container .nav-tabs>.active>a:hover,
+#s-lg-tabs-container .nav-pills>.active>a:hover,
+#s-lg-tabs-container .nav-tabs>.active>button:hover,
+#s-lg-tabs-container .nav-pills>.active>button:hover {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #0C234B;
+
+  border: 1px solid transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-bottom-color: transparent;
+  font-weight: bold;
+}
+
+#s-lg-tabs-container .nav .dropdown-toggle .caret {
+  border-top-color: #e1e1e1;
+}
+
+#s-lg-tabs-container .nav-tabs button.dropdown-toggle .caret {
+  margin-left: 2px;
+  margin-top: -3px;
+}
+
+#s-lg-tabs-container .nav-tabs>li>a.s-lg-tab-drop {
+  border-radius: 0;
+  padding: 4px 6px 4px 3px;
+  border-left: 1px solid transparent;
+}
+
+#s-lg-tabs-container .nav-tabs>li>button.s-lg-tab-drop {
+  border-radius: 0;
+  padding: 4px 6px 0px 3px;
+  border-left: 1px solid transparent;
+  margin-right: 2px;
+}
+
+#s-lg-tabs-container .nav-tabs>li>a.s-lg-tab-drop:hover {
+  border-radius: 0;
+  border-left: 1px solid #bbb;
+  padding: 4px 6px 4px 3px;
+}
+
+#s-lg-tabs-container .nav-tabs>li>button.s-lg-tab-drop:hover {
+  border-radius: 0;
+  border-left: 1px solid #bbb;
+  padding: 4px 6px 0px 3px;
+}
+
+#s-lg-tabs-container .nav-tabs>li>a.s-lg-tab-top-link,
+#s-lg-tabs-container .nav-tabs>li>a.s-lg-tab-top-link:hover,
+#s-lg-tabs-container .nav-tabs>li>button.s-lg-tab-top-link,
+#s-lg-tabs-container .nav-tabs>li>button.s-lg-tab-top-link:hover {
+  border-radius: 0;
+  font-weight: bold;
+  padding: 4px 5px 4px 10px;
+}
+
+
+/* Box titles - no underline and larger font */
+.s-lib-box .s-lib-box-title {
+  border-bottom: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.s-lg-guide-body .s-lib-box {
+  background-color: #FFF;
+  display: inline-block;
+  margin: 0 0 30px;
+  position: relative;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 15px #888888;
+}
+
+.s-lib-box-std .s-lib-box-title {
+  background-color: #ffffff;
+  background-image: none;
+  color: #2a2a2a;
+  border-bottom: 1px solid #d7d7d7;
+  border-radius: 0;
+}
+
+/* Email label color on profile box*/
+.label-info {
+  background-color: #8B0015;
+}
+
+.s-lib-profile-email a {
+  font-size: 1.2em;
+}
+
+}
+
+.s-lib-box-content ul li {
+  padding-bottom: 6px !important;
+}
+
+.s-lib-box-content ol li {
+  padding-bottom: 6px !important;
 }
