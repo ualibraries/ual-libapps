@@ -1276,5 +1276,6 @@ fieldset.collapsed {
 }
 
 html.ua-brand-icons.external-links .navbar-nav [target="_blank"]::after {
-    content: "" ;
+  content: "";
+}
 }
