@@ -33,7 +33,6 @@
     "webpack-merge-and-include-globally": "^2.1.24"
   },
   "dependencies": {
-    "jquery-once": "^2.2.3",
     "normalize.css": "^8.0.1"
   }
 }
