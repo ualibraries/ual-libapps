@@ -9,12 +9,24 @@
       if (window.innerWidth >= 991) {
         $('.overlay-menu-scroll li.dropdown > a', context).not('.nolink').addClass('disabled');
       }
-      $('.overlay-menu-scroll', context).once('uazen-overlay-menu-keyboard', function () {
-        $('.overlay-menu-scroll ul.menu > li a', context).on( "keydown", Drupal.uaZenOverlayMenu.handleKeyboardEvents);
-      });
-      $('.overlay-menu-scroll', context).once('uazen-overlay-menu-hover', function () {
-        $('.overlay-menu-scroll a.dropdown-toggle', context).on( 'mouseout', Drupal.uaZenOverlayMenu.handleHoverEvents);
-      });
+
+      /**
+       * The traditional Drupal way to handle behavior like this is to wrap an event listener in a jQuery
+       * once() call.  For some reason, this isn't working with LibApps but I don't actually think there's
+       * much point in preserving the once() call since the point is to prevent multiple bindings from multiple
+       * calls to Drupal.attachBehaviors().  Since we're not in Drupal, nothing else should be calling
+       * Drupal.attachBehaviors()
+       */
+
+      $('.overlay-menu-scroll ul.menu > li a', context).on( "keydown", Drupal.uaZenOverlayMenu.handleKeyboardEvents);
+      $('.overlay-menu-scroll a.dropdown-toggle', context).on( 'mouseout', Drupal.uaZenOverlayMenu.handleHoverEvents);
+      // $('.overlay-menu-scroll', context).once('uazen-overlay-menu-keyboard', function () {
+      //   $('.overlay-menu-scroll ul.menu > li a', context).on( "keydown", Drupal.uaZenOverlayMenu.handleKeyboardEvents);
+      // });
+
+      // $('.overlay-menu-scroll', context).once('uazen-overlay-menu-hover', function () {
+      //   $('.overlay-menu-scroll a.dropdown-toggle', context).on( 'mouseout', Drupal.uaZenOverlayMenu.handleHoverEvents);
+      // });
     }
   };
 
