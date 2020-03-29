@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "aws s3 sync dist s3://wsimpson-libguides --delete",
+    "deploy": "aws s3 sync ./dist/ s3://wsimpson-libguides --delete",
     "build:dev": "npx webpack -w --verbose",
     "build:prod": "npx webpack -p",
     "serve": "node ./static-server.js"
