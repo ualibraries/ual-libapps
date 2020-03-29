@@ -3,6 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const MergeIntoSingleFilePlugin = require('webpack-merge-and-include-globally');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
   entry: './src/index.js',
@@ -57,6 +58,9 @@ const config = {
         ],
       }
     }),
+    new CopyWebpackPlugin([
+      {from:'src/images',to:'images'} 
+    ]),
   ],
 };
 
