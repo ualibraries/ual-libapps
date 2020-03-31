@@ -1461,3 +1461,7 @@ html.ua-brand-icons.external-links .navbar-nav [target="_blank"]::after {
 .s-lib-box-content ol li {
   padding-bottom: 6px !important;
 }
+
+body {
+  background: hotpink;
+}
