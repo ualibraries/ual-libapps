@@ -18,4 +18,4 @@ require('http').createServer(function (request, response) {
 }).listen(8000);
 
 console.log("Static server running on port 8000")
-console.log("Run 'ngrok http 8000' in a separate terminal to expose assets to the Internet")
+console.log("Run 'ngrok http -bind-tls=true 8000' in a separate terminal to expose assets to the Internet")
