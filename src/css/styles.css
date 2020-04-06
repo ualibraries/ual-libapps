@@ -1461,3 +1461,41 @@ html.ua-brand-icons.external-links .navbar-nav [target="_blank"]::after {
 .s-lib-box-content ol li {
   padding-bottom: 6px !important;
 }
+
+div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button {
+  color: #8b0015 !important;
+  background-color: transparent !important;
+  border-color: #8b0015;
+  border-radius: 0;
+  border-width: 2px;
+  background-clip: border-box;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  background-clip: border-box;
+  font-weight: 700;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  white-space: normal;
+  display: block;
+  width: 100%;
+}
+
+
+div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button:hover {
+  color: #fff !important;
+  background-color: #ab0520 !important;
+  border-color: #ab0520 !important;
+}
+
+
+div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
+    opacity: .65;
+    box-shadow: none;
+}
+
+div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline::after {
+  content: " (Offline)";
+}
