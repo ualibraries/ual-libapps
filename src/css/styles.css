@@ -1495,7 +1495,3 @@ div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
     opacity: .65;
     box-shadow: none;
 }
-
-div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline::after {
-  content: " (Offline)";
-}
