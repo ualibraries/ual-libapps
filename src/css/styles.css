@@ -1495,3 +1495,15 @@ div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
     opacity: .65;
     box-shadow: none;
 }
+
+#footer_sub ul#social-media-links li a svg {
+    font-size: 1.667em;
+    margin-right: 12px;
+    position: relative;
+    top: 3px;
+    display: inline;
+}
+
+#footer_sub ul#social-media-links li a svg path {
+    fill: #333;
+}
