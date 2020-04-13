@@ -1516,3 +1516,7 @@ div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
 #s-lg-guide-header-updated {
     display: none !important;
 }
+
+.s-lib-box-content a {
+    font-weight: normal;
+}
