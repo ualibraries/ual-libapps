@@ -1507,3 +1507,12 @@ div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
 #footer_sub ul#social-media-links li a svg path {
     fill: #333;
 }
+
+#s-lg-guide-header-url {
+    border-right: none;
+}
+
+#s-lg-guide-print-url,
+#s-lg-guide-header-updated {
+    display: none !important;
+}
