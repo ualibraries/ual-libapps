@@ -2,7 +2,9 @@
 var Drupal = Drupal || { 'settings': {}, 'behaviors': {}, 'locale': {} };
 
 // Allow other JavaScript libraries to use $.
-jQuery.noConflict();
+// LibAnswers uses $ to interact with jQuery, so if you call noConflict, it breaks
+// all the LibAnswers JavaScript.
+// jQuery.noConflict();
 
 (function ($) {
 
