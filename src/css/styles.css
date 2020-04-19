@@ -1524,3 +1524,22 @@ div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
 #s-lg-box-23419281 {
     border: none;
 }
+
+
+/* FAQ Search Box Styles */
+#s-srch-description-0 {
+    display: none;
+}
+
+#s-la-box-61220-container,
+#s-srch-facet-0-topics h3 {
+    margin-top: 0;
+}
+
+@media (min-width: 992px) {
+    /* Flip "Topics" and search results for larger screens */
+    #s-srch-source-0 > .row > .col-md-9,
+    #s-srch-source-0 > .row > .col-md-3 {
+        float: right !important;
+    }
+}
