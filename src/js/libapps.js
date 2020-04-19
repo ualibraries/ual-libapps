@@ -8,7 +8,7 @@
             clearInterval(checkExist);
         }
         if ($('#s-la-content-search-query-11022').length) {
-            $('#s-la-content-search-query-11022').attr('placeholder', 'Search FAQ');
+            $('#s-la-content-search-query-11022').attr('placeholder', 'Search FAQs');
             clearInterval(checkExist);
         }
         count++;
