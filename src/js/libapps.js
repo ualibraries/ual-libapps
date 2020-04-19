@@ -11,6 +11,10 @@
             $('#s-la-content-search-query-11022').attr('placeholder', 'Search FAQs');
             clearInterval(checkExist);
         }
+        if ($('#s-la-searchform-11022 .s-la-searchform-button').length) {
+            $('#s-la-searchform-11022 .s-la-searchform-button').text("Search");
+            clearInterval(checkExist);
+        }
         count++;
     }, 10);
   });
