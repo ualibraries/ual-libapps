@@ -27,4 +27,12 @@ have to clear your browser cache to see the change.
 
 This project uses Webpack to build assets and Amazon S3 (provided by [UA CloudOps](https://cloudops.arizona.edu/serverless-website)) to serve them.  Github Actions are used to deploy to production on every commit/push to master (see `.github/workflows/main.yaml` for the full configuration).  Two Github Secrets need to be present for the deployment to work: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.  These should be set the values specified in [Stache](https://stache.arizona.edu/).
 
+## CORS
+
+Since this project is providing assets that are supposed to be served on a domain other than the one they're hosted on, you have to ensure that your Cross-origin resource sharing (CORS) configuration for S3 allows this.  The necessary setup is documented in `cors.json`.  In the event that a new S3 bucket has to be provisioned to serve this project the CORS configuration needs to be updated (e.g. to allow a new domain), you can update the CORS configuration using the following command:
+
+```
+aws s3api put-bucket-cors --profile <profile_name> --bucket <bucket_id> --cors-configuration file://cors.json
+```
+
 ![Node.js CI](https://github.com/simpsonw/ual-libapps/workflows/Node.js%20CI/badge.svg)
