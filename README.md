@@ -3,7 +3,7 @@
 This repository contains customizations for LibApps for the University of Arizona Libraries.
 The styles here are intended to match [UA Sites](https://uasites.arizona.edu/home).
 
-# Quickstart
+## Quickstart
 
 0. Ensure that the "Custom JS/CSS" section under "Look & Feel" in the LibApps Group or Application you're trying
 to customize is loading the appropriate files:
@@ -23,11 +23,11 @@ and make your changes.  Click the "Commit your changes" button.
 3. Wait approximately 30 seconds to a minutes.  Then reload the libapps page you're working on to see the result.  You may
 have to clear your browser cache to see the change.
 
-# Technical Overview
+## Technical Overview
 
 This project uses Webpack to build assets and Amazon S3 (provided by [UA CloudOps](https://cloudops.arizona.edu/serverless-website)) to serve them.  Github Actions are used to deploy to production on every commit/push to master (see `.github/workflows/main.yaml` for the full configuration).  Two Github Secrets need to be present for the deployment to work: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.  These should be set the values specified in [Stache](https://stache.arizona.edu/).
 
-## CORS
+### CORS
 
 Since this project is providing assets that are supposed to be served on a domain other than the one they're hosted on, you have to ensure that your Cross-origin resource sharing (CORS) configuration for S3 allows this.  The necessary setup is documented in `cors.json`.  In the event that a new S3 bucket has to be provisioned to serve this project the CORS configuration needs to be updated (e.g. to allow a new domain), you can update the CORS configuration using the following command:
 
