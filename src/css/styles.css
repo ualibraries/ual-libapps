@@ -1581,3 +1581,7 @@ div#libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
 .s-lib-box ul li a {
     font-size: 14px;
 }
+
+body {
+    background: hotpink !important;
+}
