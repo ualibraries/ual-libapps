@@ -3,6 +3,10 @@
 This repository contains customizations for LibApps for the University of Arizona Libraries.
 The styles here are intended to match [UA Sites](https://uasites.arizona.edu/home).
 
+## People
+
+This repository is primarily intended for use by the members of Research & Learning, in particular Jennifer Church-Duran, Leslie Sult, and Nicole Hennig.
+
 ## Quickstart
 
 0. Ensure that the "Custom JS/CSS" section under "Look & Feel" in the LibApps Group or Application you're trying
