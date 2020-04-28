@@ -1,0 +1,75 @@
+/* To change the max-width of the body container white space at side of guides */
+.container {
+  width: 90%;
+}
+
+
+/* Hide breadcrumbs */
+#s-lib-bc {
+  display: none;
+}
+
+
+/* sets the navigation link colors and actions on AZ List and other locations*/
+.nav-pills>li.active>button,
+.nav-pills>li.active>button:focus,
+.nav-pills>li.active>button:hover {
+  background-color: #0C234B;
+  color: #fff;
+  border-color: #0C234B;
+}
+
+/* adjust font sizes on AZList*/
+.h3.s-lg-db-panel-title {
+  font-size: 24px !important;
+}
+
+/* fix tab margin on individual subject/expert guides */
+.nav-tabs {
+  margin-top: 20px;
+}
+
+/* button colors for systemwide pages (AZ List etc.)*/
+#btn btn-small btn-primary {
+  color: #fff;
+  background-color: #0C234B;
+  border-color: #0C234B;
+  border-width: 2px;
+  transition: all .1s ease-in-out;
+}
+
+.btn-info,
+.btn-sky {
+  color: #fff;
+  background-color: #0C234B;
+  border-color: #0C234B;
+  border-width: 2px;
+  transition: all .1s ease-in-out;
+}
+
+/* AZ list results title size */
+#s-lg-az-results .s-lg-az-result-title {
+  font-size: 1.1em;
+}
+
+/* AZ list results description font size */
+.s-lg-az-result-description {
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+/* Alternative Keyword size */
+.s-lg-az-result-keywords {
+  font-size: 1em;
+}
+
+/* fix margins on side box - AZ List */
+.s-lib-public-side-header h2 {
+  margin-top: 15px;
+}
+
+.s-lg-small,
+.s-lib-debug,
+.s-lib-small {
+  font-size: 14px;
+}

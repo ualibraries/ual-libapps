@@ -6,10 +6,13 @@ const MergeIntoSingleFilePlugin = require('webpack-merge-and-include-globally');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
-  entry: './src/index.js',
+  entry: {
+      libanswers: './src/libanswers.js',
+      libguides: './src/libguides.js',
+      azlist: './src/azlist.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
   },
   module: {
     rules: [

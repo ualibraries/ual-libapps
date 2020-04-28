@@ -1,0 +1,200 @@
+/***hide breadcrumbs and footers***/
+.breadcrumb,
+#s-la-footer-brand,
+#s-la-public-footer {
+  display: none;
+}
+
+/* --- UA Campus Fonts --- */
+@import url("https://brand.arizona.edu/sites/default/files/v2/ua-brand-fonts/milo.css");
+
+/* Lose the gradients on all action bars */
+.s-la-faq-action-bar {
+  background-image: none;
+}
+
+/* Lose the gradients on all title bars */
+.s-la-color-bars {
+  background-image: none;
+}
+
+/* No background color on title bars for main content area and footer */
+#s-la-page-column-1 .s-la-color-bars,
+.breadcrumb.s-la-color-bars,
+.s-la-footer.s-la-color-bars {
+  background-color: transparent;
+}
+
+/* Remove the header text in favor of repeating it in a box when needed */
+#s-la-public-header {
+  padding: 5px;
+}
+
+.s-la-public-header-text {
+  display: none;
+}
+
+/* Boxes placed in column 1 never get a border and the headers are stylized */
+#s-la-page-column-1 .s-la-box-container {
+  border: none;
+}
+
+#s-la-page-column-1 .s-la-box-title.s-la-color-bars,
+#s-la-page-column-1 .s-la-box-title.s-la-color-bars-border {
+  background-color: transparent;
+  background-image: none;
+}
+
+#s-la-page-column-1 .s-la-box-title.s-li-color-bars-border {
+  border-color: #cccccc;
+}
+
+#s-la-page-column-1 .s-la-box-title {
+  border-width: 2px;
+  padding: 2px 10px;
+}
+
+a {
+  font-weight: 500;
+  -webkit-transition: color .1s ease-in-out;
+
+}
+
+/* Hide the built-in title bar in favor of recreating it with our own combination of items */
+#s-la-page-title-bar {
+  display: none;
+}
+
+/* Custom markup for the question and answer */
+h2.question {
+  margin: 0px 0px 10px 0px;
+  font-size: 24px !important;
+  font-weight: bold;
+  font-family: Miloweb;
+}
+
+.s-la-box-title h2 {
+  margin: 0px 0px 5px 0px;
+  font-size: 20px !important;
+  font-weight: bold;
+  font-family: Miloweb;
+}
+
+.s-la-box-content h3 {
+  margin: 25px 0px 10px 0px;
+  font-color: #A9A9A9;
+  font-size: 22px !important;
+  font-weight: 500;
+  font-family: Miloweb;
+}
+
+.s-la-faq-answer {
+  font-size: 1.1em;
+  margin: 0px 35px 0px 0px;
+  font-family: Miloweb;
+}
+
+/* Custom styles for breadcrumbs */
+#s-la-bc {
+  background-color: #f5f5f5;
+  border-bottom: solid 1px #eeeeee;
+  margin-bottom: 10px;
+}
+
+#s-la-page-column-1 div:first-child {
+  margin-top: 0;
+}
+
+/* Keep the header in a consistent place on all pages */
+.s-la-public-home.s-la-public-header-text {
+  text-align: left;
+}
+
+/* Visually hide question box label */
+.pquestion_wrap label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Remove the "more details" field entirely */
+.pdetails_wrap {
+  display: none;
+}
+
+/* Reduce padding inside the widget boxes */
+.s-la-box-content {
+  padding: 15px;
+}
+
+/* Get rid of box around submit buttons */
+.form-actions {
+  padding: 0;
+  margin-top: 0;
+  background-color: transparent;
+  border-top: 0;
+}
+
+/* To change FAQ search result pages */
+
+#s-srch-facet-0-keywords {
+  display: none;
+}
+
+#s-srch-facet-0-g {
+  display: none;
+}
+
+.s-srch-top-header {
+  font-size: 20px !important;
+  font-weight: bold;
+  font-family: Miloweb;
+}
+
+.s-srch-result-title {
+  font-size: 18px !important;
+  font-weight: bold;
+  font-family: Miloweb;
+}
+
+.s-srch-result-subj {
+  font-size: 14px !important;
+  font-weight: bold;
+  font-family: Miloweb;
+}
+
+.s-la-faq-listing-q {
+  font-size: 18px !important;
+  font-weight: bold;
+  font-family: Miloweb;
+}
+
+.s-la-faq-listing {
+  font-size: 16px !important;
+  font-weight: normal;
+  font-family: Miloweb;
+}
+
+.s-la-color-bars {
+  background-color: #E2E9EB;
+}
+
+/***hide submit question button***/
+.alert-info {
+  display: none;
+}
+
+.s-srch-result .label {
+  font-size: .9em;
+}
+
+.label {
+  font-size: .8em;
+  line-height: 1.5;
+  margin: 0 .5em;
+}

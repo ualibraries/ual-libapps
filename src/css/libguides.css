@@ -1,0 +1,37 @@
+/* no shadow on content boxes */
+.s-lib-box {
+    box-shadow: 0 0 0 0;
+    background-color: #ffffff;
+}
+
+/* set font size and family for ordered and unordered lists */
+.s-lib-box ul li a {
+    font-size: 16px;
+    font-family: Miloweb;
+}
+
+/* adds bottom borderline to top tab navigation */
+#s-lg-tabs-container .nav-tabs {
+    border-bottom: 1.5px solid #ddd;
+}
+
+/* Guide title set to Miloweb, size increased to 28px font and margins adjusted */
+#s-lg-guide-header-info h1,
+.s-lib-header h1 {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: Miloweb;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+/* increase font weight for URL links*/
+.s-lib-box-content a {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* body line height changed*/
+body {
+    line-height: 1.5em;
+}
