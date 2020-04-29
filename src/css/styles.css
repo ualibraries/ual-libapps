@@ -1417,6 +1417,9 @@ html.ua-brand-icons.external-links .navbar-nav [target="_blank"]::after {
   padding: 4px 5px 4px 10px;
 }
 
+/* Left justify (align) subnavigation text */
+.s-lg-tabs-side .s-lg-boxnav .list-group-item {
+  padding-left: 0px;}
 
 /* Box titles - no underline and larger font */
 .s-lib-box .s-lib-box-title {
