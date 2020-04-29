@@ -3,6 +3,10 @@
 This repository contains customizations for LibApps for the University of Arizona Libraries.
 The styles here are intended to match [UA Sites](https://uasites.arizona.edu/home).
 
+## People
+
+This repository is primarily intended for use by the members of Research & Learning, in particular Jennifer Church-Duran, Leslie Sult, and Nicole Hennig.
+
 ## Quickstart
 
 0. Ensure that the "Custom JS/CSS" section under "Look & Feel" in the LibApps Group or Application you're trying
@@ -25,7 +29,7 @@ have to clear your browser cache to see the change.
 
 ## Technical Overview
 
-This project uses Webpack to build assets and Amazon S3 (provided by [UA CloudOps](https://cloudops.arizona.edu/serverless-website)) to serve them.  Github Actions are used to deploy to production on every commit/push to master (see `.github/workflows/main.yaml` for the full configuration).  Two Github Secrets need to be present for the deployment to work: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.  These should be set the values specified in [Stache](https://stache.arizona.edu/).
+This project uses Webpack to build assets and Amazon S3 (provided by [UA CloudOps](https://cloudops.arizona.edu/serverless-website)) to serve them.  Github Actions are used to deploy to production on every commit/push to master (see `.github/workflows/main.yaml` for the full configuration).  Two Github Secrets need to be present for the deployment to work: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.  These should be set the values specified in [Stache](https://stache.arizona.edu/new/entry/77512cf5d4d72baa96b10a8ea7721081).
 
 ### CORS
 
