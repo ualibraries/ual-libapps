@@ -74,6 +74,8 @@ to `src/css/libguides.css`.  For styles that should affect all three, add the ch
 
 This project uses Webpack to build assets and Amazon S3 (provided by [UA CloudOps](https://cloudops.arizona.edu/serverless-website)) to serve them.  Github Actions are used to deploy to production on every commit/push to master (see `.github/workflows/main.yaml` for the full configuration).  Two Github Secrets need to be present for the deployment to work: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.  These should be set the values specified in [Stache](https://stache.arizona.edu/new/entry/77512cf5d4d72baa96b10a8ea7721081).
 
+The reason it takes an hour for the changes to go live is due to the caching strategy implemented by CloudOps.  CloudOps have indicated that they may add a manual cache clearing mechanism in the future.
+
 ### CORS
 
 Since this project is providing assets that are supposed to be served on a domain other than the one they're hosted on, you have to ensure that your Cross-origin resource sharing (CORS) configuration for S3 allows this.  The necessary setup is documented in `cors.json`.  In the event that a new S3 bucket has to be provisioned to serve this project or the CORS configuration needs to be updated (e.g. to allow a new domain), you can set the CORS configuration using the following command:
