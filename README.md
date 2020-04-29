@@ -61,10 +61,12 @@ Paste the contents of `html/header.html` into "Custom Header", click the save bu
 
 0. Test your changes out in a sandbox environment in the "Custom JS/CSS" box of the application you want to style.
 
-1. Go to `src/css/` in this repository, click the edit icon, and add your CSS to the appropriate file.  For styles that
-only affect the "Databases A-Z list", add the changes to `src/css/azlist.css`.  For styles that should affect all LibGuides
-from the Main Library, add the changes to `src/css/libguides.css`.  For styles that should affect LibAnswers, add the changes
-to `src/css/libguides.css`.  For styles that should affect all three, add the changes to `src/css/styles.css`.
+1. Go to `src/css/` in this repository, click the edit icon, and add your CSS to the appropriate file:  
+
+* For styles that should only affect the "Databases A-Z list", add the changes to `src/css/azlist.css`.  
+* For styles that should affect all LibGuides from the Main Library, add the changes to `src/css/libguides.css`.  
+* For styles that should affect LibAnswers, add the changes to `src/css/libguides.css`.  
+* For styles that should affect all three, add the changes to `src/css/styles.css`.
 
 2. Wait approximately 30 seconds to a minute for the build and deployment to finish.  You should be able to track the progress of this through the "Actions" tab on this Github repository.
 
