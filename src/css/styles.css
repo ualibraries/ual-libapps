@@ -1421,6 +1421,12 @@ html.ua-brand-icons.external-links .navbar-nav [target="_blank"]::after {
 .s-lg-tabs-side .s-lg-boxnav .list-group-item {
   padding-left: 0px;}
 
+.nav-stacked-nested>li>ul>li>a, .nav-stacked>li>ul>li>a {
+    font-weight: 400;
+    color: #0c234b;
+    padding-left: 0px;
+}
+
 /* Box titles - no underline and larger font */
 .s-lib-box .s-lib-box-title {
   border-bottom: none;
