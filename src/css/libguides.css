@@ -30,6 +30,12 @@
     margin-top: 10px;
 }
 
+/* Set default box title size and font */
+.s-lib-box .s-lib-box-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: miloweb;
+}
 
 /* increase font weight for URL links*/
 .s-lib-box-content a {
@@ -41,3 +47,5 @@
 body {
     line-height: 1.5em;
 }
+
+
