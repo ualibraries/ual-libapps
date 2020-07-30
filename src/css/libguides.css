@@ -1,5 +1,7 @@
 /* no breadcrumbs */
-#s-lib-bc {display: none;}
+#s-lib-bc {
+    display: none;
+}
 
 /* no shadow on content boxes */
 .s-lib-box {
