@@ -1,3 +1,8 @@
+/*adjust width */
+.container {
+  width: 85%;
+}
+
 /* no breadcrumbs */
 #s-lib-bc {
     display: none;
