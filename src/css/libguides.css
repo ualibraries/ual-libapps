@@ -28,7 +28,12 @@
 /* remove bullets from system based lists */
 .s-lg-er-item-list, .s-lg-link-list, .s-lg-rss-list, .s-lg-system-list {
    padding-left: 10px;
-     list-style-type: none;
+   list-style-type: none;
+   line-height: 1.25em;
+   padding-bottom:  10px;
+}
+
+</style>
 }
 
 /* Guide title set to Miloweb, size increased to 28px font and margins adjusted */
