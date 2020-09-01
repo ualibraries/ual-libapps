@@ -25,6 +25,11 @@
     border-bottom: 1.5px solid #ddd;
 }
 
+/* remove bullets from system based lists */
+.s-lg-er-item-list, .s-lg-link-list, .s-lg-rss-list, .s-lg-system-list {
+   padding-left: 10px;
+     list-style-type: none;
+}
 /* Guide title set to Miloweb, size increased to 28px font and margins adjusted */
 #s-lg-guide-header-info h1,
 .s-lib-header h1 {
