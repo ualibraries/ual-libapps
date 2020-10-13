@@ -73,3 +73,10 @@
 .s-lib-small {
   font-size: 14px;
 }
+
+/* Set style for widget buttons */
+#s-lg-embedded-search-widget-1602627176080 button, input, optgroup, select, textarea {
+    color: #fff;
+    font-family: miloweb;
+    margin: 5px;
+}
