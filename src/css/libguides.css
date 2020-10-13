@@ -53,4 +53,9 @@ body {
     line-height: 1.5em;
 }
 
-
+/*Set widget button style*/
+#s-lg-embedded-search-widget-1602627176080 button, input, optgroup, select, textarea {
+    color: #fff;
+    font-family: Miloweb;
+    margin: 5px;
+}
