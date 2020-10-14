@@ -74,10 +74,13 @@
   font-size: 14px;
 }
 
-/* Set style for widget buttons */
-#s-lg-embedded-search-widget-1602627176080 button {
- font-family: Miloweb !important;
- margin: 5px !important;
- color: #ffffff !important;
-background-color:  #8b0015;
+/* set system list line height and bullet styles*/
+.s-lg-link-list {
+padding-left: 40px;
+line-height: 1.2em;
+margin-bottom: 0px;
+}
+
+.s-lg-widget {
+padding-left: 40px;
 }
