@@ -20,6 +20,17 @@
     font-family: Miloweb;
 }
 
+/* set system list line height and bullet styles*/
+.s-lg-link-list {
+padding-left: 40px;
+line-height: 1.2em;
+margin-bottom: 0px;
+}
+
+.s-lg-widget {
+padding-left: 40px;
+}
+
 /* adds bottom borderline to top tab navigation */
 #s-lg-tabs-container .nav-tabs {
     border-bottom: 1.5px solid #ddd;
