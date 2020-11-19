@@ -10,7 +10,8 @@
 		"AllowedOrigins": [
 		    "*.libanswers.com",
 		    "*.libguides.com",
-		    "*.libcal.com"
+		    "*.libcal.com",
+            "*.arizona.edu"
 		],
 		"ExposeHeaders": [
 		    ""
