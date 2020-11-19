@@ -17,8 +17,8 @@ three contain the styles needed for the overall layout of the site plus custom s
 Paste the following block of code in the "Custom JS/CSS" section under "Admin > Look & Feel" on **LibGuides**:
 
 ```
-<link rel="stylesheet" type="text/css" href="https://libapps.cloudsites.arizona.edu/azlist.css">
-<script src="https://libapps.cloudsites.arizona.edu/vendor.js"></script>
+<link rel="stylesheet" type="text/css" href="https://ual-libapps.s3-us-west-2.amazonaws.com/azlist.css">
+<script src="https://ual-libapps.s3-us-west-2.amazonaws.com/vendor.js"></script>
 <script src="//v2.libanswers.com/load_chat.php?hash=07713bc057f66ebcdccd4dd1b4a2be3e"></script>
 ```
 
@@ -31,8 +31,8 @@ Paste the following block of code in the "Custom JS/CSS" section under "Admin > 
 
 
 ```
-<link rel="stylesheet" type="text/css" href="https://libapps.cloudsites.arizona.edu/libguides.css">
-<script src="https://libapps.cloudsites.arizona.edu/vendor.js"></script>
+<link rel="stylesheet" type="text/css" href="https://ual-libapps.s3-us-west-2.amazonaws.com/libguides.css">
+<script src="https://ual-libapps.s3-us-west-2.amazonaws.com/vendor.js"></script>
 <script src="//v2.libanswers.com/load_chat.php?hash=07713bc057f66ebcdccd4dd1b4a2be3e"></script>
 ```
 
@@ -47,8 +47,8 @@ Then expand the "Footer" section of the page and paste the contents of `html/foo
 Paste the following block of code in the "Custom JS/CSS" section under "Admin > FAQ Groups > (Group Name) > Look & Feel" on **LibAnswers**:
 
 ```
-<link rel="stylesheet" type="text/css" href="https://libapps.cloudsites.arizona.edu/libanswers.css">
-<script src="https://libapps.cloudsites.arizona.edu/vendor.js"></script>
+<link rel="stylesheet" type="text/css" href="https://ual-libapps.s3-us-west-2.amazonaws.com/libanswers.css">
+<script src="https://ual-libapps.s3-us-west-2.amazonaws.com/vendor.js"></script>
 <script src="//v2.libanswers.com/load_chat.php?hash=07713bc057f66ebcdccd4dd1b4a2be3e"></script>
 ```
 
@@ -70,13 +70,11 @@ Paste the contents of `html/header.html` into "Custom Header", click the save bu
 
 2. Wait approximately 30 seconds to a minute for the build and deployment to finish.  You should be able to track the progress of this through the "Actions" tab on this Github repository.
 
-3. Wait roughly an hour for the CloudOps cache to expire.  Then the changes should be live.
+3. The changes should be live.
 
 ## Technical Overview
 
-This project uses Webpack to build assets and Amazon S3 (provided by [UA CloudOps](https://cloudops.arizona.edu/serverless-website)) to serve them.  Github Actions are used to deploy to production on every commit/push to master (see `.github/workflows/main.yaml` for the full configuration).  Two Github Secrets need to be present for the deployment to work: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.  These should be set the values specified in [Stache](https://stache.arizona.edu/new/entry/77512cf5d4d72baa96b10a8ea7721081).
-
-The reason it takes an hour for the changes to go live is due to the caching strategy implemented by CloudOps.  CloudOps have indicated that they may add a manual cache clearing mechanism in the future.
+This project uses Webpack to build assets and Amazon S3 (located in the Libraries production AWS account managed by TeSS) to serve them.  Github Actions are used to deploy to production on every commit/push to master (see `.github/workflows/main.yaml` for the full configuration).  Two Github Secrets need to be present for the deployment to work: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.  These should be set the values specified in [Stache](https://stache.arizona.edu/new/entry/77512cf5d4d72baa96b10a8ea7721081).
 
 ### CORS
 
