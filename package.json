@@ -5,22 +5,22 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "aws s3 sync ./dist/ s3://libapps20200425224652845.cloudsites --delete",
+    "deploy": "aws s3 sync ./dist/ s3://ual-libapps --delete",
     "build:dev": "npx webpack -w --verbose",
     "build:prod": "npx webpack -p",
     "serve": "node ./static-server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simpsonw/ual-libapps.git"
+    "url": "git+https://github.com/ualibraries/ual-libapps.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/simpsonw/ual-libapps/issues"
+    "url": "https://github.com/ualibraries/ual-libapps/issues"
   },
-  "homepage": "https://github.com/simpsonw/ual-libapps#readme",
+  "homepage": "https://github.com/ualibraries/ual-libapps#readme",
   "devDependencies": {
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
