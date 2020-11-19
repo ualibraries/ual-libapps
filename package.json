@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simpsonw/ual-libapps.git"
+    "url": "git+https://github.com/ualibraries/ual-libapps.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/simpsonw/ual-libapps/issues"
+    "url": "https://github.com/ualibraries/ual-libapps/issues"
   },
-  "homepage": "https://github.com/simpsonw/ual-libapps#readme",
+  "homepage": "https://github.com/ualibraries/ual-libapps#readme",
   "devDependencies": {
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
