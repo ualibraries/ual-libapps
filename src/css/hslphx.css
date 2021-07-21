@@ -67,6 +67,7 @@ body {
  color: #ffffff !important;
 background-color:  #8b0015;
 }
+
 /* add icon for links opening in new window */
 a[target="_blank"]:after {
 content: "\E648";
