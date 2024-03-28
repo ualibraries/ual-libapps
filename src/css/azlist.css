@@ -4,12 +4,6 @@
 }
 
 
-/* Hide breadcrumbs */
-#s-lib-bc {
-  display: none;
-}
-
-
 /* sets the navigation link colors and actions on AZ List and other locations*/
 .nav-pills>li.active>button,
 .nav-pills>li.active>button:focus,
