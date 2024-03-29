@@ -3,11 +3,6 @@
   width: 85%;
 }
 
-/* no breadcrumbs */
-#s-lib-bc {
-    display: none;
-}
-
 /* no shadow on content boxes */
 .s-lib-box {
     box-shadow: 0 0 0 0;
