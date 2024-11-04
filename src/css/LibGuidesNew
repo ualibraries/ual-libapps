@@ -1,0 +1,140 @@
+/*adjust width */
+.container {
+  width: 85%;
+}
+
+/* no shadow on content boxes */
+.s-lib-box {
+    box-shadow: 0 0 0 0;
+    background-color: #ffffff;
+}
+
+/* set font size and family for ordered and unordered lists */
+.s-lib-box ul li a {
+    font-size: 16px;
+    font-family: proxima-nova;
+}
+
+/* set system list line height and bullet styles*/
+.s-lg-link-list {
+padding-left: 40px;
+line-height: 1.2em;
+margin-bottom: 0px;
+}
+
+.s-lg-widget {
+padding-left: 40px;
+}
+
+/* adds bottom borderline to top tab navigation */
+#s-lg-tabs-container .nav-tabs {
+    border-bottom: 1.5px solid #ddd;
+}
+
+/* Guide title set to proxima-nova, size increased to 28px font and margins adjusted */
+#s-lg-guide-header-info h1,
+.s-lib-header h1 {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: proxima-nova;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Set default box title size and font */
+.s-lib-box .s-lib-box-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: proxima-nova;
+}
+/* body line height changed*/
+body {
+    line-height: 1.5em;
+}
+
+/* Set style for widget buttons */
+#s-lg-embedded-search-widget-1602627176080 button {
+ font-family: proxima-nova!important;
+ margin: 5px !important;
+ color: #ffffff !important;
+background-color:  #8b0015;
+}
+label[for="s-lg-er-search"] {
+  font-size: 0px
+}
+
+/* Remove underline on left side navigation */
+#s-lg-tabs-container .nav-pills>li>a, #s-lg-tabs-container .nav-pills>li>button, #s-lg-tabs-container .nav-tabs>li>a, #s-lg-tabs-container .nav-tabs>li>button {
+text-decoration: none;
+}
+.nav-stacked-nested>li>ul>li>a, .nav-stacked>li>ul>li>a {
+text-decoration: none;
+}
+
+/* Increase breadcrumb font size  */
+.breadcrumb>li a {
+     font-size: medium;
+}
+
+#s-lib-bc {
+    display: inline!important;
+}
+
+/* Change color recommended box */
+#s-lg-az-results #s-lg-db-name-featured, .s-lg-db-name-featured {
+background-color: #E2E9EB;
+}
+
+
+/* Suppress guide update */
+.s-lg-guide-info-updated {
+display: none;
+}
+
+/* Suppress guide views */
+.s-lg-guide-info-views {
+display: none;
+}
+
+/* Suppress label tags */
+.s-lg-az-result-badge-featured  {
+    font-weight: 700;
+    color: #fff;
+    visibility: hidden;
+}
+
+/* Hide the search box */
+#col-search {
+    display: none;
+}
+
+#s-lg-az-search {
+ max-width: 400px;
+}
+
+.bootstrap-select .filter-option-inner-inner {
+    /* color: #333; */
+}
+
+.s-lib-box-std .s-lib-box-title {
+    background-color: #fff;
+    background-image: none;
+    color: #2a2a2a;
+    border-bottom: 1px solid #d7d7d7;
+    border-radius: 0;
+    font-family: proxima-nova;
+    font-size: 1.1em;
+}
+
+
+.btn-info, .btn-sky {
+    color: #fff;
+    background-color: #8b0015;
+    border-color: #8b0015;
+}
+
+.s-lg-az-result-description {
+font-weight: 400;
+
+}
+
