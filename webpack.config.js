@@ -10,6 +10,7 @@ const config = {
       libanswers: './src/libanswers.js',
       libguides: './src/libguides.js',
       azlist: './src/azlist.js',
+      LibguidesNew: './src/LibguidesNew.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
