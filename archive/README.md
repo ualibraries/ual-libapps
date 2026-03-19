@@ -5,7 +5,7 @@ As part of the redesign of LibApps, we want to preserve the history of our curre
 
 To have a minimum impact on other parts of this repository, we are placing all of this information in a new directory named `archive`. 
 
-Each in-scope application (LibAnswers, LibCal, and LibGuides) has a corresponding directory for storage of their HTML/CSS/JS.
+Each in-scope application (LibAnswers, LibCal, and LibGuides) has a separate directory for storage of their HTML/CSS/JS.
 
 Directory structure:
 ```md
@@ -22,10 +22,15 @@ archive/
      - subject/
      - profile/
      - a_z/
+  - groups
+    - hsl_tucson
+    - hsl_phoenix
 ```
 
 ## LibGuides
-Each directory within `libguides` corresponds to a top-level menu item in the "Admin > Look & Feel" settings. Within the `page_layout` directory, each subsequent directory corresponds to a dropdown item from the "Page Layout" menu item (Guide, Homepage, Search, Subject, A-Z).
+
+### Directory structure
+Each directory within `libguides` corresponds to a top-level menu item in the "Admin > Look & Feel" settings. There is also a directory for "groups". Within the `page_layout` directory, each subsequent directory corresponds to a dropdown item from the "Page Layout" menu item (Guide, Homepage, Search, Subject, A-Z).
 
 ### HTML naming conventions
 From there, each `.html` filename corresponds to a dropdown item from the "Customize Guide Templates" dropdown. Filenames are prefixed with their respective dropdown section/category. Spaces in dropdown labels have been replaced by underscores in the filename.
