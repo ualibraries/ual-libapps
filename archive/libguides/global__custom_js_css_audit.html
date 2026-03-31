@@ -3,15 +3,14 @@ CSS AUDIT
 This file is a duplicate of /archive/libguides/custom_css_js/custom_js_css.html and is being used for audit purposes.
 This file will deviate from the original file due to any comments added during the audit.
 
-The following pages were used for the purpose of the audit:
-https://libguides.library.arizona.edu/library-guides
-https://libguides.library.arizona.edu/american-indian-studies
-https://libguides.library.arizona.edu/az/databases
+Only the "AIS Staff" group uses global styles. The following page was used for the purpose of the audit:
+https://libguides.library.arizona.edu/AIS-Test
 -->
-
+<!-- This file no longer exists on new Lib site. Safe to omit from redesign. -->
 <link rel="shortcut icon" href="https://library.arizona.edu/sites/all/themes/custom/redux_ual/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="stylesheet" type="text/css" href="https://ual-libapps.s3-us-west-2.amazonaws.com/azlist.css">
 <script src="https://ual-libapps.s3-us-west-2.amazonaws.com/vendor.js"></script>
+<!-- Change icons to <link href="https://cdn.digital.arizona.edu/lib/az-icons/main/az-icons-styles.css" rel="stylesheet"> -->
 <link type="text/css" rel="stylesheet" href="https://cdn.digital.arizona.edu/lib/ua-brand-icons/v2.0.1/ua-brand-icons.min.css" media="all" />
 <script src="https://ask.library.arizona.edu/1.0/widgets/14365"></script>
 <script src="https://ask.library.arizona.edu/load_chat.php?hash=07713bc057f66ebcdccd4dd1b4a2be3e"></script>
@@ -20,46 +19,59 @@ https://libguides.library.arizona.edu/az/databases
 
 <style>
 
+/* Size medium = 16px. This is the default size on BS5. Safe to omit from redesign. */
 .breadcrumb>li a {
         font-size: medium;
 }
+/* Size medium = 16px. This is the default size on BS5. Safe to omit from redesign. */
 .breadcrumb>.active {
     font-size: medium;
 }
 
+/* Label doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 label[for="s-lg-er-search"] {
   font-size: 0px
 }
 
+/*
+Targets the breadcrumb container (nav). Block display would be more appropriate.
+Recommend omitting from redesign; block display will become default behavior.
+*/
 #s-lib-bc {
     display: inline!important;
 }
 
+/* Label doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 label[for="s-lg-er-search"]::after {
   font-size: 14px;
   content: 'Search course ebooks: ';
 }
 
-
+/* Class doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 /*reduce size of image in profile boxes*/
 .s-lib-profile-image img {
-   max-width: 50%;
+    max-width: 50%;
 }
+
+/* Class doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 /* Change color recommended box */
 #s-lg-az-results #s-lg-db-name-featured, .s-lg-db-name-featured {
-background-color: #E2E9EB;
+    background-color: #E2E9EB;
 }
 
-
+/* Class doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 /* Suppress guide update */
 .s-lg-guide-info-updated {
-display: none;
+    display: none;
 }
 
+/* Class doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 /* Suppress guide views */
 .s-lg-guide-info-views {
-display: none;
+    display: none;
 }
+
+/* Class doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 /* Suppress label tags */
 .s-lg-az-result-badge-featured  {
     font-weight: 700;
@@ -67,7 +79,7 @@ display: none;
     visibility: hidden;
 }
 
-
+/* Class doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 /* Increase size of icons*/
 .s-lg-icon {
     max-height: 20px;
@@ -76,29 +88,37 @@ display: none;
     margin-bottom: 2px;
 }
 
+/* Class doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 /* Hide the search box */
 #col-search {
     display: none;
 }
 
+/* Class doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 #s-lg-az-search {
- max-width: 400px;
+    max-width: 400px;
 }
 
+/* Rule is commented out, so it's not doing anything. Safe to omit from redesign. */
 .bootstrap-select .filter-option-inner-inner {
     /* color: #333; */
 }
 
+/* Adds base styles to alert messages. Recommend relying on AZBS defaults instead, and omitting from redesign. */
 .region-alert {
-   background-color: #e2e9eb;
+    background-color: #e2e9eb;
     background: #e2e9eb;
     display: flex;
     font-size: 16px;
     font-family:  miloweb;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
+/* 
+.s-lib-header wraps breadcrumbs, page header, and page search. Sets spacing and font size.
+Recommend using AZBS defaults for headings and omitting from redesign.
+*/
 #s-lg-guide-header-info h1, .s-lib-header h1 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -106,6 +126,10 @@ display: none;
     font-family: Miloweb;
 }
 
+/* 
+Adds base styles for "box" headings. Appearance will likely change depending on the mockup UX provides.
+Recommend reassessing once we have a mockup from UX. Rely on default AZBS as much as possible.
+*/
 .s-lib-box-std .s-lib-box-title {
     background-color: #fff;
     background-image: none;
@@ -116,13 +140,14 @@ display: none;
     font-size: 1.1em;
 }
 
-
+/* Changes button default colors. Recommend not changing button defaults and omitting from redesign. */
 .btn-info, .btn-sky {
     color: #fff;
     background-color: #8b0015;
     border-color: #8b0015;
 }
 
+/* Class doesn't exist in LibGuides page sources. Should be safe to omit from redesign. */
 .s-lg-az-result-description {
 font-weight: 400;
 
