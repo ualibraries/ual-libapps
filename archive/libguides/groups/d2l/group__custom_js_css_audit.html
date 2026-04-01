@@ -1,10 +1,11 @@
 <!-- 
 CSS AUDIT 
-This file is a duplicate of /archive/libguides/groups/d2l/group_custom_js_css.html and is being used for audit purposes.
+This file is a duplicate of /archive/libguides/groups/d2l/group__custom_js_css.html and is being used for audit purposes.
 This file will deviate from the original file due to any comments added during the audit.
 
-The following page was used for the purpose of the audit:
-https://libguides.library.arizona.edu/c.php?g=1393784
+The following pages were used for the purpose of the audit:
+- https://libguides.library.arizona.edu/c.php?g=1393784
+- https://libguides.library.arizona.edu/c.php?g=1392771
 -->
 
 <!-- University of Arizona Libraries -->
@@ -46,29 +47,34 @@ https://libguides.library.arizona.edu/c.php?g=1393784
 
 <style>
 
+/* Recommend removing this during redesign to use base Bootstrap styles (consistent experience). */
 /* To change the max-width of the body container white space at side of guides */
 .container {
   width: 95%;
 }
 
+/* Verify if we still don't want to display the search box on D2L guides. */
 #s-lg-guide-header-search {
       display: none;
 }
 
+/* ID doesn't exist in markup. Should be safe to remove from redesign. */
 #label-primary {
     display: none;
 }
 
+/* Class doesn't exist in markup. Should be safe to remove from redesign. */
 .tutorial-link {
 margin-bottom: 0px;
 }
 
+/* Class doesn't exist in markup. Should be safe to remove from redesign. */
 /* hide featured tag*/
-
 .label-primary {
     display: none;
 }
 
+/* Recommend removing in redesign to leverage base Bootstrap styles. */
 /* set system list line height and bullet styles*/
 .s-lg-link-list {
 padding-left: 40px;
@@ -76,10 +82,18 @@ line-height: 1.2em;
 margin-bottom: 0px;
 }
 
+/* 
+Adds padding to list items.
+Recommend removing in redesign to leverage base Bootstrap styles.
+*/
 .s-lg-widget {
 padding-left: 40px;
 }
 
+/* 
+Adds base styles to alert messages.
+Recommend removing in the redesign to leverage base Bootstrap styles.
+*/
 .region-alert {
    background-color: #e2e9eb;
     background: #e2e9eb;
@@ -90,21 +104,37 @@ padding-left: 40px;
   align-items: center;
 }
 
+/*
+Hides breadcrumbs. Recommend removing rule so breadcrumbs are visible for consistancy and UX.
+Might need to verify why they're hidden and make sure it's okay for us to display them.
+*/
 #s-lib-bc {
     display: none;
 }
 
+/* 
+Overrides defaut button colors.
+Recommend removing from redesign so we're not overriding default styles.
+*/
 .btn-info, .btn-sky {
     color: #fff;
     background-color: #8b0015;
     border-color: #8b0015;
 }
 
+/* Recommend removing from redesign; Milo no longer used. Base AZ Bootstrap will add the correct font. */
 .s-lib-box-std .s-lib-box-title {font-family: miloweb;}
 
+/* s-search-limiter class doesn't exist in markup. Should be safe to remove from redesign. */
 .s-search-limiter .btn-default {
 display: none;
 }
+
+/* 
+Adds an arrow to new window links. 
+Recommend determining if we want this behavior LibGuides wide, instead of D2L specific. If no, we should remove this style for consistency.
+If we plan on keeping, we should switch to material icons instead of the deprecated UA icons.
+*/
 a[target="_blank"]:after {
 content: "\E648";
      font-family: ua-brand-symbols;
