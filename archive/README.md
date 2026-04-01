@@ -23,7 +23,7 @@ archive/
     - main_campus_test
     - primary_sources_portal
     - special_collections
-    - University_of_arizona_libraries
+    - university_of_arizona_libraries
   - header_footer_tabs_boxes/
   - page_layout/
      - guide/
