@@ -1,0 +1,19 @@
+<link href="https://ualibr-libapps-assets.s3-us-west-2.amazonaws.com/ual-styles.css" rel="stylesheet" type="text/css">
+<link href="https://ualibr-libapps-assets.s3-us-west-2.amazonaws.com/ual-guide-styles.css" rel="stylesheet" type="text/css">
+<script src="https://ask.library.arizona.edu/load_chat.php?hash=07713bc057f66ebcdccd4dd1b4a2be3e"></script>
+
+<script>
+/**
+ * Customize breadcrumb links
+ */
+$(document).ready(function(){
+
+    // Remove link back to library.arizona.edu
+    $('#s-lib-bc-list li:first-child').remove();
+
+    // Rewrite LibGuides link to point to group guides page
+    $('#s-lib-bc-list a[href="http://libguides.library.arizona.edu"]')
+        .attr('href','http://libguides.library.arizona.edu/ahsl')
+        .text('AHSL Guides');
+});
+</script>
