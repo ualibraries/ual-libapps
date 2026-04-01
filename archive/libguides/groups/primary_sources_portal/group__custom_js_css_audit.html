@@ -1,28 +1,49 @@
+<!-- 
+CSS AUDIT 
+This file is a duplicate of /archive/libguides/groups/primary_sources_portal/group__custom_js_css.html and is being used for audit purposes.
+This file will deviate from the original file due to any comments added during the audit.
+
+The following pages were used for the purpose of the audit:
+- https://libguides.library.arizona.edu/tps/early-modern-ireland
+- https://libguides.library.arizona.edu/tps/multilingual-education
+- https://libguides.library.arizona.edu/tps/sport-sex-society
+- https://libguides.library.arizona.edu/tps/tucson-murals
+-->
+
 <link rel="stylesheet" type="text/css" href="https://ual-libapps.s3-us-west-2.amazonaws.com/azlist.css">
 <script src="https://ual-libapps.s3-us-west-2.amazonaws.com/vendor.js"></script>
 <script src=https://ask.library.arizona.edu/load_chat.php?hash=07713bc057f66ebcdccd4dd1b4a2be3e></script>
+<!-- Change icons to <link href="https://cdn.digital.arizona.edu/lib/az-icons/main/az-icons-styles.css" rel="stylesheet"> -->
 <link type="text/css" rel="stylesheet" href="https://cdn.digital.arizona.edu/lib/ua-brand-icons/v2.0.1/ua-brand-icons.min.css" media="all" />
 <script src="https://ask.library.arizona.edu/1.0/widgets/14365"></script>
 <script defer data-domain="libguides.library.arizona.edu" src="https://plausible.io/js/script.tagged-events.outbound-links.js"></script>
 <style>
+
+/* Class doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 /*reduce size of image in profile boxes*/
 .s-lib-profile-image img {
    max-width: 50%;
 }
 
+/* ID doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 /* Change color recommended box */
 #s-lg-az-results #s-lg-db-name-featured, .s-lg-db-name-featured {
 background-color: #E2E9EB;
 }
+
+/* Class doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 /* Suppress guide update */
 .s-lg-guide-info-updated {
 display: none;
 }
 
+/* Class doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 /* Suppress guide views */
 .s-lg-guide-info-views {
 display: none;
 }
+
+/* Class doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 /* Suppress label tags */
 .s-lg-az-result-badge-featured  {
     font-weight: 700;
@@ -30,7 +51,7 @@ display: none;
     visibility: hidden;
 }
 
-
+/* Class doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 /* Increase size of icons*/
 .s-lg-icon {
     max-height: 20px;
@@ -39,19 +60,26 @@ display: none;
     margin-bottom: 2px;
 }
 
+/* ID doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 /* Hide the search box */
 #col-search {
     display: none;
 }
 
+/* ID doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 #s-lg-az-search {
  max-width: 400px;
 }
 
+/* Rule is commented out, so it's not doing anything. Safe to remove from redesign. */
 .bootstrap-select .filter-option-inner-inner {
     /* color: #333; */
 }
 
+/* 
+Adds default styles to alerts.
+Recommend removing from redesign to rely on base AZ Bootstrap styles.
+*/
 .region-alert {
    background-color: #e2e9eb;
     background: #e2e9eb;
@@ -62,6 +90,10 @@ display: none;
   align-items: center;
 }
 
+/*
+Adds default size & spacing to h1s.
+Recommend removing from redesign to rely on default AZ Bootstrap styles.
+*/
 #s-lg-guide-header-info h1, .s-lib-header h1 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -69,6 +101,10 @@ display: none;
     font-family: Miloweb;
 }
 
+/*
+Adds default styles to the box header. Strips background colors.
+Recommend waiting to see a mockup from UX to see what we want to do with this one. Use base AZ Bootstrap as much as possible.
+*/
 .s-lib-box-std .s-lib-box-title {
     background-color: #fff;
     background-image: none;
@@ -78,34 +114,65 @@ display: none;
     font-family: miloweb;
     font-size: 1.1em;
 }
+
+/* 
+Based on other CSS, I think this was meant to hide the breadcrumbs. Breadcrumbs use a different ID in PSP guides, so this rule isn't doing anything.
+Safe to remove from redesign.
+*/
 #s-lib-bc {
     display: none; 
 }
+
+/*
+Removes border from main image box (style inherited from Springshare's .s-lib-box class).
+Keep this style in the redesign (unless UX mockup indicates otherwise).
+*/
 .s-lib-floating-box {
 border:none !important;
 }
 
+/*
+Overrides default button color.
+Recommend removing from redesign to leverage default colors, and not override AZ Bootstrap.
+*/
 .btn-info, .btn-sky {
     color: #fff;
     background-color: #8b0015;
     border-color: #8b0015;
 }
 
+/* Class doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 .s-lg-az-result-description {
 font-weight: 400;
-
+    
 }
 
+/* ID doesn't exist in LibGuides source. Should be safe to remove from redesign. */
 #s-lg-col-0 .s-lib-box-content .s-lg-widget, #s-lg-col-0 .s-lib-box-content .s-lg-link-list {
 padding-left:0;
 }
+
+/*
+These breadcrumb list items don't have an ::after pseudo-element.
+Safe to remove from redesign.
+*/
 #tps-breadcrumbs>li:last-child:after {
 display:none;
 }
+
+/*
+Removes top padding from box so it's aligned with the "about" box next to it.
+Keep this style in the redesign.
+*/
 .s-lib-box.s-lib-box-std.s-lib-floating-box {
 padding-top:0;
 }
 
+/*
+Increases font-size to match body text for list item links inside boxes.
+Recommend verifying whether or not this is still necessary with Bootstrap upgrade (AZ Bootstrap might define font-size for links?).
+Example at bottom of page: https://libguides.library.arizona.edu/tps/early-modern-ireland
+*/
 .s-lib-box ul li a {
   font-size:inherit;
 }
