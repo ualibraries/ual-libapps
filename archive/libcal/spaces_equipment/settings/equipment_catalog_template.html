@@ -1,0 +1,36 @@
+<div class="col-sm-3">
+	<div class="col-item">
+		{{#IMAGE}}
+			<div class="photo">
+				<a href="/equipment/item/{{ID}}">
+					<img src="{{IMAGE}}" class="img-responsive" alt="{{IMAGE_ALT_TEXT}}" />
+				</a>
+			</div>
+		{{/IMAGE}}
+		<div class="info">
+			<div class="row">
+				<div class="name">
+					{{NAME}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="info-details">
+					{{#MODEL}}{{MODEL}}{{/MODEL}}
+				</div>
+			</div>
+			<div class="separator clear-left">
+				<p class="btn-add">
+					<a href="#" data-gid="{{GID}}" data-eid="{{ID}}" data-cat="{{CATEGORY}}" data-loc="{{LOCATION}}" class="s-lc-eq-availability">
+						<i class="fa fa-clock-o fa-lg"></i> Availability
+					</a>
+				</p>
+				<p class="btn-details">
+					<a href="/equipment/item/{{ID}}" aria-label="More details about {{NAME}}">
+						<i class="fa fa-list fa-lg"></i> More details
+					</a>
+				</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>

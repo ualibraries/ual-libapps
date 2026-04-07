@@ -1,27 +1,13 @@
-<!-- 
-CSS AUDIT 
-This file is a duplicate of /archive/libguides/groups/university_of_arizona_libraries/group__custom_js_css.html and is being used for audit purposes.
-This file will deviate from the original file due to any comments added during the audit.
-
-The following pages were used for the purpose of the audit:
-- https://libguides.library.arizona.edu/freedoms
-- https://libguides.library.arizona.edu/books-that-matter
-- https://libguides.library.arizona.edu/genAI
-- https://libguides.library.arizona.edu/geosciences
--->
-
 <!-- University of Arizona Libraries -->
 <link rel="icon" href="https://arizona.edu/profiles/custom/az_quickstart/themes/custom/az_barrio/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="stylesheet" type="text/css" href="https://ual-libapps.s3-us-west-2.amazonaws.com/libguides.css">
 <script src="https://ual-libapps.s3-us-west-2.amazonaws.com/vendor.js"></script>
-<!-- Update link to: https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0 -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 
 <!-- Proxima Nova reference. -->
 <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
 
 <!-- Arizona Bootstrap reference. -->
- <!-- Change icons to <link href="https://cdn.digital.arizona.edu/lib/az-icons/main/az-icons-styles.css" rel="stylesheet"> -->
 <link type="text/css" rel="stylesheet" href="https://cdn.digital.arizona.edu/lib/ua-brand-icons/v2.0.7/ua-brand-icons.min.css" media="all" />
 
 <!-- Widgets & Chat. -->
@@ -32,22 +18,15 @@ The following pages were used for the purpose of the audit:
 <script defer data-domain="libguides.library.arizona.edu" src="https://plausible.io/js/script.tagged-events.outbound-links.js"></script>
 
 <style>
-
-/* Recommend removing this from redesign to rely on default AZ Bootstrap behavior, and consistent page width. */
 /*adjust width */
 .container {
   width: 95%;
 }
 
-/* Class doesn't exist in LibGudies source. Should be safe to remove from redesign. */
 .tutorial-link {
 margin-bottom: 0px;
 }
 
-/*
-This might not be needed in redesign, due to default AZ Bootstrap styles.
-Recommend confirming what this looks like with AZ Bootstrap applied, and add/remove style from redesign as needed.
-*/
 /* set system list line height and bullet styles*/
 .s-lg-link-list {
 padding-left: 40px;
@@ -55,12 +34,10 @@ line-height: 1.2em;
 margin-bottom: 0px;
 }
 
-/* Class doesn't exist in LibGudies source. Should be safe to remove from redesign. */
 .s-lg-widget {
 padding-left: 40px;
 }
 
-/* Sets alert default styles. Recommend omitting from redesign to rely on default AZ Bootstrap styles. */
 .region-alert {
    background-color: #e2e9eb;
     background: #e2e9eb;
@@ -70,35 +47,19 @@ padding-left: 40px;
   align-items: center;
 }
 
-/*
-Hides breadcrumbs.
-Recommend removing from redesign for consistent UX and for improved usability.
-*/
 #s-lib-bc {
     display: none;
 }
 
-/*
-Overrides default button color.
-Recommend removing from redesign to leverage default colors, and not override AZ Bootstrap.
-*/
 .btn-info, .btn-sky {
     color: #fff;
     background-color: #8b0015;
     border-color: #8b0015;
 }
 
-/*
-Sets font family.
-Should be safe to remove from redesign, since this is the default font in AZ Bootstrap. Should verify after adding AZ Bootstrap, though.
-If still needed, recommend adding a generic rule that targets all text and enforces Proxima Nova font, in a gloabl CSS rule.
-*/
-.s-lib-box-std .s-lib-box-title {font-family: proxima nova;}
+.s-lib-box-std .s-lib-box-title {font-family: proxima nova;{
+}
 
-/*
-This class only exists on the search page (which is not a guide page or group style).
-Safe to remove from redesign, since the class doesn't exist otherwise.
-*/
 .s-search-limiter .btn-default {
 display: none;
 }
