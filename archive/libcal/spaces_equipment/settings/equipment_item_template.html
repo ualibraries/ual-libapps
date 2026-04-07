@@ -1,0 +1,44 @@
+<div class="margin-top-sm">
+    {{#INSTRUCTIONS}}
+        <ul id="myTabs" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#desc" id="desc-tab" role="tab" data-toggle="tab" aria-controls="desc" aria-expanded="true">Description</a></li>
+            <li role="presentation" class=""><a href="#instructions" role="tab" id="instructions-tab" data-toggle="tab" aria-controls="instructions" aria-expanded="false">Instructions</a></li>
+        </ul>
+        <div id="itemtabContent" class="tab-content margin-top-sm">
+            <div role="tabpanel" class="tab-pane active in" id="desc" aria-labelledby="desc-tab">
+    {{/INSTRUCTIONS}}
+
+    {{^INSTRUCTIONS}}
+        <div class="margin-top-sm">
+    {{/INSTRUCTIONS}}
+
+        <div class="col-sm-3">
+            {{#IMAGE}}
+                <img src="{{IMAGE}}" alt="{{IMAGE_ALT_TEXT}}" class="img-thumbnail">
+            {{/IMAGE}}
+            {{#MODEL}}<strong>Model</strong> {{MODEL}}{{/MODEL}}
+        </div>
+        <div class="col-sm-9">
+            {{{DESCRIPTION}}}
+
+            {{#MANUAL}}
+                <p><a href="{{MANUAL}}" class="btn btn-default">User Manual</a></p>
+            {{/MANUAL}}
+            {{#MANUAL_FILE}}
+                <p><a href="{{MANUAL_FILE}}" target="_blank" download class="btn btn-default">User Manual</a></p>
+            {{/MANUAL_FILE}}
+        </div>
+
+    {{^INSTRUCTIONS}}
+        </div>
+    {{/INSTRUCTIONS}}
+
+    {{#INSTRUCTIONS}}
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="instructions" aria-labelledby="instructions-tab">
+                {{{INSTRUCTIONS}}}
+            </div>
+        </div>
+    {{/INSTRUCTIONS}}
+</div>
