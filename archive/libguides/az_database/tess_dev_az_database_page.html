@@ -1,0 +1,43 @@
+<body class="s-lib-public-body">
+  <a href="#s-lib-public-main" class="visually-hidden-focusable btn btn-dark position-absolute start-50 translate-middle-x z-1 mt-1">Skip to main content</a>
+
+  {{header_section}}
+
+  <div id="s-lib-public-header" class="s-lib-header s-lib-side-borders m-0 p-0">
+    <div id="ualibraries-page-header" class="bg-blue text-bg-blue pt-0 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            {{page_title_section}}
+            {{page_description_section}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="alert alert-warning alert-dismissible fade show mb-3 p-0" role="alert">
+            {{page_alert_section}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          {{breadcrumbs_section}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="s-lib-public-main-searchbar">
+    <div class="container">
+      {{search_bar_section}}
+    </div>
+  </div>
+
+  <div id="s-lib-public-main" class="s-lib-main container s-lib-side-borders" tabindex="-1">
+    <section>
+      {{page_content_section}}
+    </section>
+  </div>
+
+  {{footer_section}}
+</body>
